@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:design/halper/Appconfig.dart';
+import 'package:design/screen/dashboard/course.dart';
 import 'package:design/screen/dashboard/buyScreen.dart';
 import 'package:design/screen/dashboard/dashboard.dart';
 import 'package:design/screen/dashboard/search.dart';

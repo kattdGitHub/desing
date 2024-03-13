@@ -15,23 +15,17 @@ class Course extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<String>text=<String>[
+    List<String> text = <String>[
       "Product Design v1.0",
       "Java Development",
       "Visual Design",
     ];
-    List<String>profile=<String>
-    [
+    List<String> profile = <String>[
       "Robertson Connie",
       "Nguyen Shane",
       "Bert Pullman",
-
-    ];  List<String>Price=<String>
-    [
-      "\$190",
-      "\$190",
-      "\$250"
     ];
+    List<String> Price = <String>["\$190", "\$190", "\$250"];
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(),
@@ -245,7 +239,6 @@ class Course extends StatelessWidget {
                 child: Column(
                   children: [
                     for (int a = 0; a < text.length; a++)
-
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.white,
@@ -291,8 +284,7 @@ class Course extends StatelessWidget {
                                       width: 10.w,
                                     ),
                                     Text(
-                                      profile[a
-                                      ],
+                                      profile[a],
                                       style: TextStyle(
                                           color: Colors.black26,
                                           fontWeight: FontWeight.w400,

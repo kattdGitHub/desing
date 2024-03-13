@@ -11,6 +11,8 @@ class AppColors {
   static const Color lightBluishColor = Color(0xff64b5f6);
   static const Color background = Color(0xffF4F3FD);
   static const Color Contearbackground = Color(0xffC4C4C4);
+  static const Color appbarbackground = Color(0xffFFE7EE);
+  
 }
 
 class MyTheme {

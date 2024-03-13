@@ -1,5 +1,6 @@
 import 'package:design/halper/appColor.dart';
 import 'package:design/halper/halper.dart';
+import 'package:design/screen/dashboard/buyScreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -91,61 +92,66 @@ class Search extends StatelessWidget {
                         color: AppColors.Contearbackground,
                         borderRadius: BorderRadius.circular(6)),
                   ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Text(
-                        "Product Design v1.0",
-                        style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 14.sp,
+                  InkWell(onTap: () {
+                    pushTo(context, BuyScreen());
+
+                  },
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Product Design v1.0",
+                          style: TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 14.sp,
+                          ),
                         ),
-                      ),
-                      Row(
-                        children: [
-                          Icon(
-                            CupertinoIcons.profile_circled,
-                            color: AppColors.Contearbackground,
-                          ),
-                          Text(
-                            " Robertson Connie",
-                            style: TextStyle(
-                              fontWeight: FontWeight.w400,
-                              fontSize: 12.sp,
+                        Row(
+                          children: [
+                            Icon(
+                              CupertinoIcons.profile_circled,
+                              color: AppColors.Contearbackground,
                             ),
-                          )
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          Text(
-                            "\$${190}",
-                            style: TextStyle(
-                              color: AppColors.primaryColor,
-                              fontWeight: FontWeight.w700,
-                              fontSize: 16.sp,
-                            ),
-                          ),
-                    wSize(10),
-                          Container(
-                            width: 41.w,
-                            height: 15.h,
-                            child: Text(
-                              "16hours",
+                            Text(
+                              " Robertson Connie",
                               style: TextStyle(
-                                  fontWeight: FontWeight.w400,
-                                  fontSize: 10.sp,
-                                  color: Colors.deepOrange),
+                                fontWeight: FontWeight.w400,
+                                fontSize: 12.sp,
+                              ),
+                            )
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            Text(
+                              "\$${190}",
+                              style: TextStyle(
+                                color: AppColors.primaryColor,
+                                fontWeight: FontWeight.w700,
+                                fontSize: 16.sp,
+                              ),
                             ),
-                            decoration: BoxDecoration(
-                                color: AppColors.Contearbackground,
-                                borderRadius: BorderRadius.circular(5)),
-                          ),
-                        ],
-                      )
-                    ],
-                  ).paddingSymmetric(horizontal: 25)
+                      wSize(10),
+                            Container(
+                              width: 41.w,
+                              height: 15.h,
+                              child: Text(
+                                "16hours",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 10.sp,
+                                    color: Colors.deepOrange),
+                              ),
+                              decoration: BoxDecoration(
+                                  color: AppColors.Contearbackground,
+                                  borderRadius: BorderRadius.circular(5)),
+                            ),
+                          ],
+                        )
+                      ],
+                    ).paddingSymmetric(horizontal: 25),
+                  )
                 ],
               ).paddingSymmetric(horizontal: 20).paddingOnly(top: 20),
           ],

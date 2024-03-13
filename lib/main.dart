@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:design/halper/Appconfig.dart';
 import 'package:design/screen/dashboard/course.dart';
+import 'package:design/screen/dashboard/buyScreen.dart';
 import 'package:design/screen/dashboard/dashboard.dart';
 import 'package:design/screen/dashboard/search.dart';
 import 'package:flutter/material.dart';
@@ -97,7 +98,7 @@ class MyApp extends StatelessWidget {
           ),
           primaryColor: Color(0xff3D5CFF),
         ),
-        home: Dashboard(),
+        home: BuyScreen(),
       ),
     );
   }

@@ -2,6 +2,7 @@ import 'dart:typed_data';
 
 import 'package:design/halper/Appconfig.dart';
 import 'package:design/halper/halper.dart';
+import 'package:design/screen/dashboard/buyScreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -271,66 +272,71 @@ class Course extends StatelessWidget {
                             SizedBox(
                               width: 30.w,
                             ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  text[a],
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 16.sp,
-                                      fontWeight: FontWeight.w500),
-                                ),
-                                SizedBox(
-                                  width: 20.w,
-                                ),
-                                Row(
-                                  children: [
-                                    Icon(Icons.account_circle_outlined),
-                                    SizedBox(
-                                      width: 10.w,
-                                    ),
-                                    Text(
-                                      profile[a
-                                      ],
-                                      style: TextStyle(
-                                          color: Colors.black26,
-                                          fontWeight: FontWeight.w400,
-                                          fontSize: 14.sp),
-                                    )
-                                  ],
-                                ),
-                                Row(
-                                  children: [
-                                    Text(
-                                      Price[a],
-                                      style: TextStyle(
-                                        color: Color(0xff3D5CFF),
-                                        fontSize: 18.sp,
-                                        fontWeight: FontWeight.w500,
+                            InkWell(
+                             onTap: () {
+                               pushTo(context, BuyScreen());
+                             },
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    text[a],
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 16.sp,
+                                        fontWeight: FontWeight.w500),
+                                  ),
+                                  SizedBox(
+                                    width: 20.w,
+                                  ),
+                                  Row(
+                                    children: [
+                                      Icon(Icons.account_circle_outlined),
+                                      SizedBox(
+                                        width: 10.w,
                                       ),
-                                    ),
-                                    SizedBox(
-                                      width: 20.w,
-                                    ),
-                                    Container(
-                                      height: 15.h,
-                                      decoration: BoxDecoration(
-                                          color: Color(0xffFFEBF0),
-                                          borderRadius:
-                                              BorderRadius.circular(10.r)),
-                                      child: Center(
-                                          child: Text(
-                                        "16 hours",
+                                      Text(
+                                        profile[a
+                                        ],
                                         style: TextStyle(
-                                            color: Color(0xffFF6905),
+                                            color: Colors.black26,
                                             fontWeight: FontWeight.w400,
                                             fontSize: 14.sp),
-                                      )),
-                                    )
-                                  ],
-                                ),
-                              ],
+                                      )
+                                    ],
+                                  ),
+                                  Row(
+                                    children: [
+                                      Text(
+                                        Price[a],
+                                        style: TextStyle(
+                                          color: Color(0xff3D5CFF),
+                                          fontSize: 18.sp,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: 20.w,
+                                      ),
+                                      Container(
+                                        height: 15.h,
+                                        decoration: BoxDecoration(
+                                            color: Color(0xffFFEBF0),
+                                            borderRadius:
+                                                BorderRadius.circular(10.r)),
+                                        child: Center(
+                                            child: Text(
+                                          "16 hours",
+                                          style: TextStyle(
+                                              color: Color(0xffFF6905),
+                                              fontWeight: FontWeight.w400,
+                                              fontSize: 14.sp),
+                                        )),
+                                      )
+                                    ],
+                                  ),
+                                ],
+                              ),
                             )
                           ],
                         ),

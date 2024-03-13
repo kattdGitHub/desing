@@ -1,4 +1,5 @@
 import 'package:design/screen/dashboard/course.dart';
+import 'package:design/screen/dashboard/search.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -358,7 +359,7 @@ class _DashboardState extends State<Dashboard> {
               ),
             ),
             Course(),
-            Scaffold(),
+            Search(),
             Scaffold(),
             Scaffold(),
 

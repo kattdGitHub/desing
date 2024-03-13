@@ -4,6 +4,7 @@ description: "A new Flutter project."
 publish_to: 'none'
 environment:
   sdk: '>=3.4.0-99.1.beta <4.0.0'
+#/sdk: '>=3.4.0-99.1.beta <4.0.0'
 
 dependencies:
   flutter:
@@ -24,6 +25,7 @@ flutter:
   assets:
     - assets/splaasScreenImage/
     - assets/
+
   fonts:
     - family: Poppins
       fonts:

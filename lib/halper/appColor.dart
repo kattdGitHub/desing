@@ -9,6 +9,8 @@ class AppColors {
   static const Color darkCreamColor = Color(0xff121212);
   static const Color darkBluishColor = Color(0xff403b58);
   static const Color lightBluishColor = Color(0xff64b5f6);
+  static const Color background = Color(0xffF4F3FD);
+  static const Color Contearbackground = Color(0xffC4C4C4);
 }
 
 class MyTheme {

@@ -1,3 +1,4 @@
+import 'package:design/screen/dashboard/search.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -150,7 +151,7 @@ class _DashboardState extends State<Dashboard> {
                             children: [
                               Text(
                                 "Learning Plan",
-                                style: TextStyle(
+                                      style: TextStyle(
                                   fontWeight: FontWeight.w500,
                                   fontSize: 18.sp,
                                 ),
@@ -357,7 +358,7 @@ class _DashboardState extends State<Dashboard> {
               ),
             ),
             Scaffold(),
-            Scaffold(),
+            Search(),
             Scaffold(),
             Scaffold(),
 

@@ -1,10 +1,13 @@
 import 'dart:ui';
 
 import 'package:design/halper/Appconfig.dart';
+import 'package:design/screen/dashboard/account.dart';
 import 'package:design/screen/dashboard/course.dart';
 import 'package:design/screen/dashboard/buyScreen.dart';
 import 'package:design/screen/dashboard/dashboard.dart';
 import 'package:design/screen/dashboard/my_courses.dart';
+import 'package:design/screen/dashboard/on_dashboard1.dart';
+import 'package:design/screen/dashboard/on_dashboard2.dart';
 import 'package:design/screen/dashboard/payment_successful.dart';
 import 'package:design/screen/dashboard/paynow.dart';
 import 'package:design/screen/dashboard/search.dart';
@@ -101,7 +104,7 @@ class MyApp extends StatelessWidget {
           ),
           primaryColor: Color(0xff3D5CFF),
         ),
-        home: My_Courses(),
+        home: On_Dashboard1(),
       ),
     );
   }

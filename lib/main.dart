@@ -1,5 +1,7 @@
 import 'package:design/halper/Appconfig.dart';
+import 'package:design/pageview.dart';
 import 'package:design/screen/dashboard/dashboard.dart';
+import 'package:design/screen/dashboard/my_courses.dart';
 import 'package:design/screen/dashboard/notification.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -109,7 +111,7 @@ class MyApp extends StatelessWidget {
           ),
           primaryColor: Color(0xff3D5CFF),
         ),
-        home: Notifications(),
+        home: PageViewScreen(),
       ),
     );
   }

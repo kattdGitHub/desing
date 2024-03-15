@@ -645,8 +645,9 @@ void _showbotomsheet(
                     width: 230,
                     decoration: BoxDecoration(
                         color: Color(0xff3D5CFF),
-                        borderRadius: BorderRadius.circular(10)),
+                        borderRadius: BorderRadius.circular(10),),
                     child: Center(
+
                       child: Text(
                         "Apply Fliter",
                         style: TextStyle(

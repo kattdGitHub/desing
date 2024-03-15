@@ -1,16 +1,6 @@
-import 'dart:ui';
-
 import 'package:design/halper/Appconfig.dart';
-import 'package:design/screen/dashboard/account.dart';
-import 'package:design/screen/dashboard/course.dart';
-import 'package:design/screen/dashboard/buyScreen.dart';
 import 'package:design/screen/dashboard/dashboard.dart';
-import 'package:design/screen/dashboard/my_courses.dart';
-import 'package:design/screen/dashboard/on_dashboard1.dart';
-import 'package:design/screen/dashboard/on_dashboard2.dart';
-import 'package:design/screen/dashboard/payment_successful.dart';
-import 'package:design/screen/dashboard/paynow.dart';
-import 'package:design/screen/dashboard/search.dart';
+import 'package:design/screen/dashboard/notification.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -36,63 +26,78 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Demo',
         theme: ThemeData.light().copyWith(
           textTheme: TextTheme(
-            bodyLarge: Theme.of(context)
+            bodyLarge: Theme
+                .of(context)
                 .textTheme
                 .bodyLarge
                 ?.copyWith(fontFamily: "Poppins"),
-            bodySmall: Theme.of(context)
+            bodySmall: Theme
+                .of(context)
                 .textTheme
                 .bodyLarge
                 ?.copyWith(fontFamily: "Poppins"),
-            displayLarge: Theme.of(context)
+            displayLarge: Theme
+                .of(context)
                 .textTheme
                 .bodyLarge
                 ?.copyWith(fontFamily: "Poppins"),
-            displayMedium: Theme.of(context)
+            displayMedium: Theme
+                .of(context)
                 .textTheme
                 .bodyLarge
                 ?.copyWith(fontFamily: "Poppins"),
-            displaySmall: Theme.of(context)
+            displaySmall: Theme
+                .of(context)
                 .textTheme
                 .bodyLarge
                 ?.copyWith(fontFamily: "Poppins"),
-            headlineSmall: Theme.of(context)
+            headlineSmall: Theme
+                .of(context)
                 .textTheme
                 .bodyLarge
                 ?.copyWith(fontFamily: "Poppins"),
-            titleSmall: Theme.of(context)
+            titleSmall: Theme
+                .of(context)
                 .textTheme
                 .bodyLarge
                 ?.copyWith(fontFamily: "Poppins"),
-            titleMedium: Theme.of(context)
+            titleMedium: Theme
+                .of(context)
                 .textTheme
                 .bodyLarge
                 ?.copyWith(fontFamily: "Poppins"),
-            titleLarge: Theme.of(context)
+            titleLarge: Theme
+                .of(context)
                 .textTheme
                 .bodyLarge
                 ?.copyWith(fontFamily: "Poppins"),
-            labelSmall: Theme.of(context)
+            labelSmall: Theme
+                .of(context)
                 .textTheme
                 .bodyLarge
                 ?.copyWith(fontFamily: "Poppins"),
-            labelMedium: Theme.of(context)
+            labelMedium: Theme
+                .of(context)
                 .textTheme
                 .bodyLarge
                 ?.copyWith(fontFamily: "Poppins"),
-            labelLarge: Theme.of(context)
+            labelLarge: Theme
+                .of(context)
                 .textTheme
                 .bodyLarge
                 ?.copyWith(fontFamily: "Poppins"),
-            headlineMedium: Theme.of(context)
+            headlineMedium: Theme
+                .of(context)
                 .textTheme
                 .bodyLarge
                 ?.copyWith(fontFamily: "Poppins"),
-            headlineLarge: Theme.of(context)
+            headlineLarge: Theme
+                .of(context)
                 .textTheme
                 .bodyLarge
                 ?.copyWith(fontFamily: "Poppins"),
-            bodyMedium: Theme.of(context)
+            bodyMedium: Theme
+                .of(context)
                 .textTheme
                 .bodyLarge
                 ?.copyWith(fontFamily: "Poppins"),
@@ -104,7 +109,7 @@ class MyApp extends StatelessWidget {
           ),
           primaryColor: Color(0xff3D5CFF),
         ),
-        home: On_Dashboard1(),
+        home: Notifications(),
       ),
     );
   }

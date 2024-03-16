@@ -30,7 +30,7 @@ class SignUpScreen extends StatelessWidget {
                 ),
                 Text(
                   "Enter your details below & free sign up",
-      B `             style: TextStyle(
+            style: TextStyle(
                     fontWeight: FontWeight.w400,
                     fontSize: 12.sp,
                     color: Color(0xffB8B8D2),

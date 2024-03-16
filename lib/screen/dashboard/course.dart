@@ -318,13 +318,14 @@ class Course extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(10.r)),
                                       child: Center(
-                                          child: Text(
-                                        "16 hours",
-                                        style: TextStyle(
-                                            color: Color(0xffFF6905),
-                                            fontWeight: FontWeight.w400,
-                                            fontSize: 14.sp),
-                                      )),
+                                        child: Text(
+                                          "16 hours",
+                                          style: TextStyle(
+                                              color: Color(0xffFF6905),
+                                              fontWeight: FontWeight.w400,
+                                              fontSize: 14.sp),
+                                        ),
+                                      ),
                                     )
                                   ],
                                 ),
@@ -644,10 +645,10 @@ void _showbotomsheet(
                     height: 50,
                     width: 230,
                     decoration: BoxDecoration(
-                        color: Color(0xff3D5CFF),
-                        borderRadius: BorderRadius.circular(10),),
+                      color: Color(0xff3D5CFF),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
                     child: Center(
-
                       child: Text(
                         "Apply Fliter",
                         style: TextStyle(

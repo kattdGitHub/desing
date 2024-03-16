@@ -111,7 +111,7 @@ class MyApp extends StatelessWidget {
           ),
           primaryColor: Color(0xff3D5CFF),
         ),
-        home: PageViewScreen(),
+        home: MyCourses(),
       ),
     );
   }

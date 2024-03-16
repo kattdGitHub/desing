@@ -1,6 +1,7 @@
-import 'package:design/screen/dashboard/on_dashboard1.dart';
-import 'package:design/screen/logscreen.dart';
 import 'package:flutter/material.dart';
+import 'package:design/screen/dashboard/on_dashboard1.dart';
+import 'package:design/screen/dashboard/on_dashboard2.dart';
+import 'package:design/screen/dashboard/on_dashboard3.dart';
 
 class PageViewScreen extends StatefulWidget {
   @override
@@ -10,7 +11,9 @@ class PageViewScreen extends StatefulWidget {
 class _PageViewScreenState extends State<PageViewScreen> {
   PageController controller = PageController();
   List<Widget> _list = <Widget>[
-    LoginScreen(),On_Dashboard1(),
+    OnDashboard1(),
+    OnDashboad2(),
+    OnDashboard3(),
   ];
   int _curr = 0;
 
@@ -20,7 +23,8 @@ class _PageViewScreenState extends State<PageViewScreen> {
       body: PageView(
         children: _list,
         scrollDirection: Axis.horizontal,
-        reverse: true,
+        reverse: false,
+        // Disable backward scrolling
         physics: BouncingScrollPhysics(),
         controller: controller,
         onPageChanged: (num) {
@@ -29,27 +33,6 @@ class _PageViewScreenState extends State<PageViewScreen> {
           });
         },
       ),
-    );
-  }
-}
-
-class Pages extends StatelessWidget {
-  final text;
-
-  Pages({this.text});
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              text,
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-            ),
-          ],),
     );
   }
 }

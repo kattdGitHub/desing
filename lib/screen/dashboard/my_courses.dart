@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class My_Courses extends StatelessWidget {
-  const My_Courses({super.key});
+class MyCourses extends StatelessWidget {
+  const MyCourses({super.key});
 
   @override
   Widget build(BuildContext context) {

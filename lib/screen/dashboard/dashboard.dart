@@ -1,3 +1,4 @@
+import 'package:design/screen/dashboard/account.dart';
 import 'package:design/screen/dashboard/course.dart';
 import 'package:design/screen/dashboard/search.dart';
 import 'package:flutter/cupertino.dart';
@@ -8,6 +9,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:design/halper/Appconfig.dart';
 import 'package:design/halper/appColor.dart';
 import 'package:design/halper/halper.dart';
+
+import 'notification.dart';
 
 class Dashboard extends StatefulWidget {
   Dashboard({super.key});
@@ -360,8 +363,8 @@ class _DashboardState extends State<Dashboard> {
             ),
             Course(),
             Search(),
-            Scaffold(),
-            Scaffold(),
+            Notifications(),
+            Account(),
 
           ],
       ),

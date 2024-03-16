@@ -1,8 +1,8 @@
+import 'package:design/halper/Appconfig.dart';
 import 'package:design/pageview.dart';
 import 'package:flutter/material.dart'; // Flutter framework
 import 'package:flutter_screenutil/flutter_screenutil.dart'; // Screen utilities
 import 'package:design/utils/app_multi_provider.dart'; // Multi-provider utility
-import 'package:design/utils/common/app_config.dart'; // App configuration
 import 'package:design/utils/theme/app_theme.dart';
 
 import 'package:design/utils/common/app_config.dart';

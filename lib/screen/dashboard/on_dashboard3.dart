@@ -7,8 +7,8 @@ import '../../halper/appColor.dart';
 import '../logscreen.dart';
 import '../signup.dart';
 
-class On_Dashboard3 extends StatelessWidget {
-  const On_Dashboard3({super.key});
+class OnDashboard3 extends StatelessWidget {
+  const OnDashboard3({super.key});
 
   @override
   Widget build(BuildContext context) {

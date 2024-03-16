@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:design/business_logics/service/all_getter_setter.dart';
+import 'package:design/halper/Appconfig.dart';
 import 'package:design/utils/common/AppColors.dart';
 import 'package:design/utils/common/app_common_button.dart';
 import 'package:design/utils/common/app_config.dart';

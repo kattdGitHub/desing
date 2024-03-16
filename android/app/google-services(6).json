@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "580640683403",
+    "project_id": "designing-7c0e2",
+    "storage_bucket": "designing-7c0e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580640683403:android:aee6aac5dde0170f532b8e",
+        "android_client_info": {
+          "package_name": "com.pst.design"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrNx5SgDegnKSI-N2PMpGpy8CWdspSIIk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

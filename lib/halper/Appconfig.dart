@@ -8,4 +8,6 @@ class AppConfig {
     height = MediaQuery.sizeOf(context).height;
     width = MediaQuery.sizeOf(context).width;
   }
+  static GlobalKey<NavigatorState> materialKey =
+  GlobalKey<NavigatorState>();
 }

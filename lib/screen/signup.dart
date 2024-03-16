@@ -30,7 +30,7 @@ class SignUpScreen extends StatelessWidget {
                 ),
                 Text(
                   "Enter your details below & free sign up",
-                  style: TextStyle(
+            style: TextStyle(
                     fontWeight: FontWeight.w400,
                     fontSize: 12.sp,
                     color: Color(0xffB8B8D2),
@@ -64,12 +64,15 @@ class SignUpScreen extends StatelessWidget {
                   TextFieldCustom(
                     suffixIcon: Icon(
                       CupertinoIcons.eye_slash,
-
                     ),
                   ),
                   hSize(40),
                   AppBtn(
                     title: "Creat account",
+                    style: TextStyle(
+                      fontSize: 16.sp,
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,

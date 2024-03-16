@@ -1,20 +1,21 @@
 import 'package:design/halper/appColor.dart';
 import 'package:design/halper/halper.dart';
+import 'package:design/screen/dashboard/on_dashboard2.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'on_dashboard2.dart';
+import '../logscreen.dart';
 
-class On_Dashboard1 extends StatelessWidget {
-  const On_Dashboard1({super.key});
+class OnDashboard1 extends StatelessWidget {
+  const OnDashboard1({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         actions: [
-          InkWell(onTap: () => pushTo(context,on_Dashboard2()),
+          InkWell(onTap: () => pushTo(context,LoginScreen()),
             child: Text(
               textAlign: TextAlign.end,
               "Skip",

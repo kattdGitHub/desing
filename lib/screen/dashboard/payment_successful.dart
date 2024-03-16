@@ -2,8 +2,8 @@ import 'package:design/halper/halper.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class Payment_Successful extends StatelessWidget {
-  const Payment_Successful({super.key});
+class PaymentSuccessful extends StatelessWidget {
+  const PaymentSuccessful({super.key});
 
   @override
   Widget build(BuildContext context) {
